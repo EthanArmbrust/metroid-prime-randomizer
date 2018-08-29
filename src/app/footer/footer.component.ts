@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { faDiscord, faGithub } from '@fortawesome/fontawesome-free-brands';
-
-import fontawesome from '@fortawesome/fontawesome';
-
 import { environment } from '../../environments/environment';
 
-fontawesome.library.add(faDiscord, faGithub);
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { fab, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faGithub, faDiscord);
+dom.watch();
 
 @Component({
   selector: 'app-footer',

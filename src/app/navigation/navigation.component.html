@@ -12,20 +12,50 @@
     </div>
     <div class="navbar-menu" [ngClass]="{ 'is-active': showNav }">
       <div class="navbar-start">
-          <a class="navbar-item" routerLink="/randomizer" routerLinkActive="is-active">
-            Generate Randomized Game
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" routerLink="/help">
+            Help
           </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Help
-            </a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" *ngFor="let helpItem of helpItems" routerLink="{{ helpItem.link }}">{{ helpItem.text }}</a>
-            </div>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" *ngFor="let helpItem of helpItems" routerLink="{{ helpItem.link }}">{{ helpItem.text }}</a>
           </div>
+        </div>
       </div>
       <div class="navbar-end">
-        <a class="navbar-item" href="https://github.com/etaylor8086/prime-randomizer-web/issues" target="_blank">Report Issue</a>
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <div class="control">
+              <a class="icon is-large" href="https://github.com/etaylor8086/prime-randomizer-web" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+            <div class="control">
+              <a class="icon is-large" href="https://discord.gg/gymstUz" target="_blank">
+                <i class="fab fa-discord fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <div class="control">
+              <a class="button" href="https://github.com/etaylor8086/prime-randomizer-web/issues" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <span>Report Issue</span>
+              </a>
+            </div>
+            <div class="control">
+              <a class="button is-primary" href="https://github.com/etaylor8086/prime-randomizer-web/releases/tag/v{{ version }}" target="_blank">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span><strong>Download</strong></span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

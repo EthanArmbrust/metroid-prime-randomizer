@@ -13,7 +13,7 @@ export class HelpComponent implements OnInit {
   articles: object[] = [
     { name: 'Modes', value: '/help/modes' },
     { name: 'Logics', value: '/help/logics' },
-    { name: 'Patching Instructions', value: '/help/patching-instructions' }
+    { name: 'Artifacts', value: '/help/artifacts' }
   ];
   article: string;
   content: any;

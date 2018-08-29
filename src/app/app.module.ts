@@ -20,7 +20,6 @@ import { ClipboardModule } from 'ngx-clipboard';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RandomizerComponent } from './randomizer/randomizer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HelpComponent } from './help/help.component';
@@ -31,7 +30,6 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RandomizerComponent,
     HomePageComponent,
     NavigationComponent,
     HelpComponent,

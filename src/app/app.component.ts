@@ -10,8 +10,7 @@ export class AppComponent {
   title = 'Metroid Prime Randomizer';
   version: string = environment.version;
   navItems: Array<object> = [
-    { link: '/', icon: 'home', text: 'Home' },
-    { link: '/randomizer', icon: 'shuffle', text: 'Generate Randomized Game' }
+    { link: '/', text: 'Home' }
   ];
   helpItems: Array<object> = [
     { link: '/modes', text: 'Modes' },
